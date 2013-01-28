@@ -8,6 +8,7 @@ This is pretty much done for fun when I have spare time and to mainly refresh my
 TODO list:
 - Unit tests
 - Form validation
+- Logging
 - Configuration for Mongo's authentication
 - Improved comment system/post adding/etc.
 - Template improvements
