@@ -21,16 +21,10 @@
 
 	<context:property-placeholder properties-ref="deployProperties" />
 
-	<!-- Activate Spring Data MongoDB repository support -->
   	<mongo:repositories base-package="org.nuclearzone.myblog.repository" />
   	
-  	<!-- MongoDB host -->
 	<mongo:mongo host="${mongo.hostname}" port="${mongo.port}"/>
 
-	<!-- Template for performing MongoDB operations -->
   	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" 
-  			c:mongo-ref="mongo" c:databaseName="${mongo.dbname}"/>
-	
-	<!-- Service for initializing MongoDB with sample data using MongoTemplate -->
-	<!-- <bean id="initMongoService" class="org.krams.service.InitMongoService" init-method="init"/> -->	
+  			c:mongo-ref="mongo" c:databaseName="${mongo.dbname}"/>	
 </beans>
