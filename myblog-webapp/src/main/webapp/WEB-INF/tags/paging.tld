@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">
+  <tlib-version>1.0</tlib-version>
+    <short-name>pg</short-name>
+    <uri>/WEB-INF/tags/paging</uri>
+    <tag>
+        <name>paging</name>
+        <tag-class>org.nuclearzone.myblog.tag.PagingTag</tag-class>
+        <body-content>empty</body-content>
+        <info>Simple pager</info>
+        
+        <attribute>
+            <name>numberOfPagesToShow</name>
+            <required>false</required>
+            <description>How many pages to show</description>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute>
+            <name>currentPage</name>
+            <required>true</required>
+            <description>Current page</description>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute>
+            <name>totalPageCount</name>
+            <required>true</required>
+            <description>Total page count</description>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

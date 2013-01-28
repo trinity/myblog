@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.nuclearzone</groupId>
+	<artifactId>myblog</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>MyBlog parent project</name>
+	
+	<modules>
+  		<module>myblog-core</module>
+  		<module>myblog-webapp</module>
+  	</modules>
+  	
+	<properties>
+  		<spring.version>3.2.0.RELEASE</spring.version>
+  		<spring.security.version>3.1.3.RELEASE</spring.security.version>
+  		<spring.data.mongodb.version>1.1.1.RELEASE</spring.data.mongodb.version>
+  		<slf4j.version>1.6.2</slf4j.version>
+  		<logback.version>0.9.29</logback.version>
+  		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+	    	<groupId>org.slf4j</groupId>
+	      	<artifactId>slf4j-log4j12</artifactId>
+	      	<version>${slf4j.version}</version>
+		</dependency>
+		
+		<dependency>
+      		<groupId>org.springframework</groupId>
+      		<artifactId>spring-beans</artifactId>
+	    	<version>${spring.version}</version>
+		</dependency>
+	</dependencies>
+</project>
